@@ -25,40 +25,39 @@ Plugin 'L9'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 Plugin 'bling/vim-airline'
-Plugin 'isRuslan/vim-es6'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'wavded/vim-stylus'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'tpope/vim-markdown'
-Plugin 'jdkanani/vim-material-theme'
 Plugin 'majutsushi/tagbar'
-Plugin 'msanders/snipmate.vim'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-surround'
-Plugin 'burnettk/vim-angular'
-Plugin 'maksimr/vim-jsbeautify'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'tomtom/tcomment_vim'          " https://github.com/tomtom/tcomment_vim
-Plugin 'shougo/neocomplete.vim'       " https://github.com/shougo/neocomplete.vim
-Plugin 'jelera/vim-javascript-syntax' " https://github.com/jelera/vim-javascript-syntax
-Plugin 'ntpeters/vim-better-whitespace' " https://github.com/ntpeters/vim-better-whitespace
-Plugin 'nginx.vim'                      " https://github.com/vim-scripts/nginx.vim
+Plugin 'tomtom/tcomment_vim'                " https://github.com/tomtom/tcomment_vim
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'msanders/snipmate.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'shougo/neocomplete.vim'             " https://github.com/shougo/neocomplete.vim
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'ntpeters/vim-better-whitespace'     " https://github.com/ntpeters/vim-better-whitespace
+
+Plugin 'jdkanani/vim-material-theme'
+Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'posva/vim-vue'
+Plugin 'mattn/emmet-vim'
+Plugin 'isRuslan/vim-es6'
+Plugin 'wavded/vim-stylus'
+Plugin 'tpope/vim-markdown'
+Plugin 'burnettk/vim-angular'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'maksimr/vim-jsbeautify'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'jelera/vim-javascript-syntax'       " https://github.com/jelera/vim-javascript-syntax
 
-"Plugin 'wincent/terminus'
-"Plugin 'Valloric/YouCompleteMe'
-"Plugin 'shougo/vimshell.vim'
-"Plugin 'ervandew/screen'
-"Plugin 'jistr/vim-nerdtree-tabs'
+" Plugin 'wincent/terminus'
+" Plugin 'Valloric/YouCompleteMe'
+" Plugin 'shougo/vimshell.vim'
+" Plugin 'ervandew/screen'
+" Plugin 'jistr/vim-nerdtree-tabs'
 
 call vundle#end()
 
