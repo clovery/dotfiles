@@ -46,6 +46,11 @@ Plugin 'burnettk/vim-angular'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tomtom/tcomment_vim'          " https://github.com/tomtom/tcomment_vim
+Plugin 'shougo/neocomplete.vim'       " https://github.com/shougo/neocomplete.vim
+Plugin 'jelera/vim-javascript-syntax' " https://github.com/jelera/vim-javascript-syntax
+Plugin 'ntpeters/vim-better-whitespace' " https://github.com/ntpeters/vim-better-whitespace
+Plugin 'nginx.vim'                      " https://github.com/vim-scripts/nginx.vim
 
 Plugin 'posva/vim-vue'
 
@@ -67,7 +72,7 @@ colorscheme desert
 syntax enable
 
 " 开启代码折叠 
-set foldmethod=syntax
+" set foldmethod=syntax
 "
 " airline'
 let g:airline#extensions#enabled = 1
@@ -163,8 +168,6 @@ let g:html_indent_style1 = "inc"
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_args = "--no-eslintrc --config ~.eslintrc"
 
-let g:neocomplete#enable_at_startup = 1
-
 if has("autocmd")
   autocmd FileType javascript setlocal ts=2 sts=2 sw=2 expandtab
 endif
@@ -209,6 +212,9 @@ set listchars=eol:␣,nbsp:☠,tab:>-,trail:-
 """"""""""""""""""""""""""""""""""""""""""""""""""
 let NERDTreeShowLineNumbers=1
 map <D-i> :NERDTree<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " mac vim
