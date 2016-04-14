@@ -64,7 +64,7 @@ call vundle#end()
 
 " 设置主题
 set t_Co=256
-set guifont=Monaco:h15
+set guifont=Consolas:h18
 set linespace=2
 set background=dark
 colorscheme desert
@@ -130,8 +130,8 @@ set showcmd
 " set autowrite
 
 " 搜索
-"set hlsearch " 高亮搜索的关键字
-set incsearch " 在搜索时，输入的词句的逐字符高亮
+set hlsearch " 高亮搜索的关键字
+" set incsearch " 在搜索时，输入的词句的逐字符高亮
 
 " 自动切换当前目录为当前文件所在的目录
 set autochdir
@@ -158,7 +158,7 @@ let b:javascript_fold=1
 " 打开javascript对dom、html和css的支持
 let javascript_enable_domhtmlcss=1
 
-" vim-javascript 
+" vim-javascript
 " Vastly improved vim's javascript indentation.
 " https://github.com/pangloss/vim-javascript
 let g:html_indent_inctags = "html,body,head,tbody"
@@ -170,20 +170,19 @@ let g:syntastic_javascript_eslint_args = "--no-eslintrc --config ~.eslintrc"
 
 if has("autocmd")
   autocmd FileType javascript setlocal ts=2 sts=2 sw=2 expandtab
+  autocmd GUIEnter * set vb t_vb=
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " 键盘映射
 """"""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <C-[> gt " Ctrl + [
-nnoremap <C-]> gT " Ctrl + ]
 nnoremap <CR> G
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " 自动注释
-" let g:vimrc_author='afei' 
-" let g:vimrc_email='clovery.org@gmail.com' 
-" nmap <D-c> :AuthorInfoDetect<cr> 
+" let g:vimrc_author='afei'
+" let g:vimrc_email='clovery.org@gmail.com'
+" nmap <D-c> :AuthorInfoDetect<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 
@@ -244,4 +243,7 @@ if has("gui_macvim")
   noremap <C-S-Tab> :<C-U>tabprevious<CR>
   inoremap <C-S-Tab> <C-\><C-N>:tabprevious<CR>
   cnoremap <C-S-Tab> <C-C>:tabprevious<CR>
+else
+  nnoremap <C-[> gt " Ctrl + [
+  nnoremap <C-]> gT " Ctrl + ]
 endif
