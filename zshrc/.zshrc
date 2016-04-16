@@ -98,7 +98,6 @@ alias gitconfig="vi ~/.gitconfig"
 
 export M2_HOME="/usr/local/include/maven"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home"
-export PATH=/usr/local/include/maven/bin:$PATH
-export PATH=/usr/bin:$PATH
+export PATH=$PATH:/usr/local/include/maven/bin
 
 #export DEVELOPER_PLATFORM_BASE_URL=""
