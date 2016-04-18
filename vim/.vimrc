@@ -63,14 +63,14 @@ call vundle#end()
 
 " 设置主题
 set t_Co=256
-set guifont=Consolas:h18
+set guifont=Monaco:h18
 set linespace=2
 set background=dark
 colorscheme desert
 
 syntax enable
 
-" 开启代码折叠 
+" 开启代码折叠
 " set foldmethod=syntax
 "
 " airline'
@@ -85,6 +85,12 @@ set nu
 " 突出显示当前行
 set cursorline
 " hi CursorLine ctermbg=LightBlue
+
+" Change cursor shape in different modes
+" http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 " 使用系统剪贴板
 set clipboard+=unnamed
@@ -243,6 +249,6 @@ if has("gui_macvim")
   inoremap <C-S-Tab> <C-\><C-N>:tabprevious<CR>
   cnoremap <C-S-Tab> <C-C>:tabprevious<CR>
 else
-  nnoremap <C-[> gt " Ctrl + [
-  nnoremap <C-]> gT " Ctrl + ]
+  nnoremap <C-[> gt " Ctrl + ]
+  nnoremap <C-]> gT " Ctrl + [
 endif
