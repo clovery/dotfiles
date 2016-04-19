@@ -249,6 +249,6 @@ if has("gui_macvim")
   inoremap <C-S-Tab> <C-\><C-N>:tabprevious<CR>
   cnoremap <C-S-Tab> <C-C>:tabprevious<CR>
 else
-  nnoremap <C-[> gt " Ctrl + ]
-  nnoremap <C-]> gT " Ctrl + [
+  nnoremap <C-]> gt " Ctrl + ]
+  nnoremap <C-[> gT " Ctrl + [
 endif
